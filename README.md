@@ -130,5 +130,3 @@ Finally, the Apache web service was verified by accessing `http://site1.local` f
 
 *For unabridged scan results and original log files, please see the `/scanresults/` and `/LogFiles/` directories.*
 
-```
-```
