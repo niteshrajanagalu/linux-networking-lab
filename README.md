@@ -27,6 +27,9 @@ Each VM is configured with two network adapters to simulate a realistic environm
 ![Rocky Linux Host-Only Adapter](screenshots/rockyhost.png)
 _Image: Rocky Linux VM Host-Only network settings._
 
+![Rocky Linux Host-Only Adapter](screenshots/rockynat.png)
+_Image: Rocky Linux VM NAT network settings._
+
 
 
 ## 1. IP & Hostname Configuration
@@ -54,7 +57,7 @@ nmap -sn 192.168.56.10 192.168.56.11 192.168.56.12 -oN hosts_alive.txt
 
 The scan successfully identified all three hosts as being up.
 
-![NMAP Hosts File](screenshots/nmaphosts.png)
+![NMAP Hosts File](screenshots/namphosts.png)
 
 -----
 
@@ -91,6 +94,7 @@ A more thorough scan targeting the top 1000 TCP ports was run to uncover any oth
 ```bash
 sudo nmap -sS --top-ports 1000 -sV 192.168.56.10 -oN rocky_top_1000.txt
 ```
+![Top 1000](screenshots/nmaptop1000.png)  
 
 ### Scan Summary
 
