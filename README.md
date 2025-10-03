@@ -1,25 +1,5 @@
-```
-/linux-networking-labs/
-|
-|-- README.md            # The main documentation file (content below)
-|
-|-- screenshots/         # Folder to store all your PNG and JPG evidence
-|   |-- firwall.png
-|   |-- kali_host.png
-|   |-- # ... (all other images)
-|
-|-- scan_results/        # Folder for raw Nmap/tool output files
-|   |-- hosts_alive.txt
-|   |-- # ... (all other scan files)
-|
-`-- demo_notes/          # Original log files and notes
-    |-- site1_phpinfo.html
-    |-- # ... (all other note files)
-```
 
------
 
-````markdown
 # Linux Networking Lab Setup & Analysis
 
 This repository documents the setup and initial analysis of a virtual lab environment created in VirtualBox. The lab is designed for practicing network reconnaissance, service enumeration, and firewall configuration analysis within a Linux-based environment.
@@ -47,7 +27,7 @@ Each VM is configured with two network adapters to simulate a realistic environm
 ![Rocky Linux Host-Only Adapter](screenshots/rocky_host.png)
 _Image: Rocky Linux VM Host-Only network settings._
 
----
+
 
 ## 1. IP & Hostname Configuration
 
@@ -63,8 +43,6 @@ To facilitate easy access to the web server, custom hostnames were mapped in the
 
 ![Windows Hosts File](screenshots/winhosts.png)
 _Image: Hostname mapping on the Windows host machine._
-
----
 
 ## 2. Connectivity Verification
 
