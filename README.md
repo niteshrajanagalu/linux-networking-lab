@@ -24,7 +24,7 @@ Each VM is configured with two network adapters to simulate a realistic environm
 * **Adapter 1 (NAT):** Provides outbound internet access for updates and package installation.
 * **Adapter 2 (Host-Only):** Creates an internal private network (`192.168.56.0/24`) for inter-VM communication, isolating the lab from the host's primary network.
 
-![Rocky Linux Host-Only Adapter](screenshots/rocky_host.png)
+![Rocky Linux Host-Only Adapter](screenshots/rockyhost.png)
 _Image: Rocky Linux VM Host-Only network settings._
 
 
@@ -54,7 +54,7 @@ nmap -sn 192.168.56.10 192.168.56.11 192.168.56.12 -oN hosts_alive.txt
 
 The scan successfully identified all three hosts as being up.
 
-*Image: Successful Nmap ping scan from the Kali VM.*
+![NMAP Hosts File](screenshots/nmaphosts.png)
 
 -----
 
@@ -67,9 +67,8 @@ The firewall on the Rocky Linux web server (`192.168.56.10`) was inspected to un
 
 The configuration confirms that SSH and HTTP traffic are explicitly permitted, which aligns with the services we expect to find.
 
-*Image: `firewall-cmd --list-all` output on the Rocky Linux server.*
+![firewall File](screenshots/firwall.png)
 
------
 
 ## 4\. Service Enumeration & Nmap Scans
 
@@ -82,6 +81,8 @@ A quick SYN scan targeting key ports (`22`, `80`, `443`) was performed for initi
 ```bash
 sudo nmap -sS -p 22,80,443 -sV 192.168.56.10 -oN rocky_ssh_http.txt
 ```
+![Quicks](screenshots/nmap_quick.png)  
+
 
 ### Comprehensive Scan (Top 1000 Ports)
 
