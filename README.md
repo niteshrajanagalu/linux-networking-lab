@@ -81,7 +81,7 @@ A quick SYN scan targeting key ports (`22`, `80`, `443`) was performed for initi
 ```bash
 sudo nmap -sS -p 22,80,443 -sV 192.168.56.10 -oN rocky_ssh_http.txt
 ```
-![Quicks](screenshots/nmap_quick.png)  
+![Quicks](screenshots/nmapquick.png)  
 
 
 ### Comprehensive Scan (Top 1000 Ports)
