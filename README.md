@@ -22,6 +22,13 @@ Each VM is configured with two network adapters to simulate a realistic environm
 * **Adapter 1 (NAT):** Provides outbound internet access for updates and package installation.
 * **Adapter 2 (Host-Only):** Creates an internal private network (`192.168.56.0/24`) for inter-VM communication, isolating the lab from the host's primary network.
 
+
+![Rocky Linux Host-Only Adapter](screenshots/rockyhost.png)
+_Image: Example-Rocky Linux VM Host-Only network settings._
+
+![Rocky Linux Host-Only Adapter](screenshots/rockynat.png)
+_Image: Example-Rocky Linux VM NAT network settings._
+
 ---
 
 ## 1. IP & Hostname Configuration
@@ -74,17 +81,24 @@ _Image: `firewall-cmd --list-all` output on the Rocky Linux server._
 
 With connectivity confirmed, a series of Nmap scans were conducted from the Kali machine against the web server (`192.168.56.10`) to identify running services.
 
+
+![NMAP Hosts File](screenshots/namphosts.png)
+
 ### Quick Scan (Common Ports)
 
 ```bash
 sudo nmap -sS -p 22,80,443 -sV 192.168.56.10 -oN rocky_ssh_http.txt
 ````
 
+![Quicks](screenshots/nmapquick.png) 
+
+
 ### Comprehensive Scan (Top 1000 Ports)
 
 ```bash
 sudo nmap -sS --top-ports 1000 -sV 192.168.56.10 -oN rocky_top_1000.txt
 ```
+![Top 1000](screenshots/nmaptop1000.png)
 
 ### Scan Summary
 
@@ -102,6 +116,9 @@ The scans revealed the following open ports and services on the Rocky Linux serv
 ## 5\. Web Server Verification
 
 Finally, the Apache web service was verified by accessing `http://site1.local` from the host machine's browser. The server successfully responded with its test page. Further investigation of the `phpinfo()` files confirms that **PHP 8.3.19** is installed and active, indicating a dynamic web environment.
+
+
+![Site1](screenshots/site1working.png) 
 
 *Image: Accessing the Apache test page for `site1.local`.*
 
