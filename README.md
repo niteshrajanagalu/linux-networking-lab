@@ -1,48 +1,32 @@
-/linux-networking-lab/
+```
+/linux-networking-labs/
 |
 |-- README.md            # The main documentation file (content below)
 |
 |-- screenshots/         # Folder to store all your PNG and JPG evidence
 |   |-- firwall.png
 |   |-- kali_host.png
-|   |-- kali_nat.png
-|   |-- namphosts.jpg
-|   |-- nmaptop1000.jpg
-|   |-- nmap_quick.png
-|   |-- rocky_host.png
-|   |-- rocky_nat.png
-|   |-- site1working.png
-|   |-- ubuntu_host.png
-|   |-- ubuntu_nat.png
-|   |-- winhosts.png
+|   |-- # ... (all other images)
 |
 |-- scan_results/        # Folder for raw Nmap/tool output files
 |   |-- hosts_alive.txt
-|   |-- rocky_ssh_http.txt
-|   |-- rocky_top1000.txt
+|   |-- # ... (all other scan files)
 |
 `-- demo_notes/          # Original log files and notes
     |-- site1_phpinfo.html
-    |-- site2_phpinfo.html
-    |-- vm_demo.txt
-    |-- vm_setup_demo.txt
-    `-- vm_setup_demo_1.txt
+    |-- # ... (all other note files)
 ```
 
 -----
 
-### GitHub README.md File
-
-Below is the complete, copy-pasteable markdown for your `README.md` file.
-
 ````markdown
-# Virtual Lab for Network Analysis & Web Enumeration
+# Linux Networking Lab Setup & Analysis
 
-This repository documents the setup and initial analysis of a virtual lab environment created in VirtualBox. The lab is designed for practicing network reconnaissance, service enumeration, and firewall configuration analysis.
+This repository documents the setup and initial analysis of a virtual lab environment created in VirtualBox. The lab is designed for practicing network reconnaissance, service enumeration, and firewall configuration analysis within a Linux-based environment.
 
 ---
 
-##  Lab Architecture
+## Lab Architecture
 
 The lab consists of three virtual machines operating on a private, internal network, with an additional adapter for external internet access.
 
@@ -126,7 +110,7 @@ sudo nmap -sS -p 22,80,443 -sV 192.168.56.10 -oN rocky_ssh_http.txt
 A more thorough scan targeting the top 1000 TCP ports was run to uncover any other open services.
 
 ```bash
-sudo nmap -sS --top-ports 1000 -sV 192.168.56.10 -oN rocky_top1000.txt
+sudo nmap -sS --top-ports 1000 -sV 192.168.56.10 -oN rocky_top_1000.txt
 ```
 
 ### Scan Summary
