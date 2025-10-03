@@ -1,0 +1,54 @@
+Apache status
+● httpd.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; preset: disabled)
+    Drop-In: /etc/systemd/system/httpd.service.d
+             └─php-fpm.conf
+     Active: active (running) since Fri 2025-10-03 12:02:53 IST; 10min ago
+ Invocation: 3b46610de213498983e4c5058c2aa29c
+       Docs: man:httpd.service(8)
+   Main PID: 11691 (httpd)
+     Status: "Total requests: 16; Idle/Busy workers 100/0;Requests/sec: 0.025; Bytes served/sec: 1.0KB/sec"
+      Tasks: 177 (limit: 28492)
+     Memory: 15.1M (peak: 15.8M)
+        CPU: 583ms
+     CGroup: /system.slice/httpd.service
+             ├─11691 /usr/sbin/httpd -DFOREGROUND
+             ├─11692 /usr/sbin/httpd -DFOREGROUND
+             ├─11693 /usr/sbin/httpd -DFOREGROUND
+             ├─11694 /usr/sbin/httpd -DFOREGROUND
+             └─11695 /usr/sbin/httpd -DFOREGROUND
+
+Oct 03 12:02:53 site1.local systemd[1]: Starting httpd.service - The Apache HTTP Server...
+Oct 03 12:02:53 site1.local (httpd)[11691]: httpd.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Oct 03 12:02:53 site1.local httpd[11691]: Server configured, listening on: port 80
+Oct 03 12:02:53 site1.local systemd[1]: Started httpd.service - The Apache HTTP Server.
+
+Site1 test
+<h1>Site 1 is working!</h1>
+
+Site2 test
+<h1>Site 2 is working!</h1>
+
+Site1 PHP info (first 10 lines)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<style type="text/css">
+body {background-color: #fff; color: #222; font-family: sans-serif;}
+pre {margin: 0; font-family: monospace;}
+a:link {color: #009; text-decoration: none; background-color: #fff;}
+a:hover {text-decoration: underline;}
+table {border-collapse: collapse; border: 0; width: 934px; box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);}
+.center {text-align: center;}
+.center table {margin: 1em auto; text-align: left;}
+
+Site2 PHP info (first 10 lines)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<style type="text/css">
+body {background-color: #fff; color: #222; font-family: sans-serif;}
+pre {margin: 0; font-family: monospace;}
+a:link {color: #009; text-decoration: none; background-color: #fff;}
+a:hover {text-decoration: underline;}
+table {border-collapse: collapse; border: 0; width: 934px; box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);}
+.center {text-align: center;}
+.center table {margin: 1em auto; text-align: left;}

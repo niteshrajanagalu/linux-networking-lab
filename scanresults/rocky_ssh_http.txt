@@ -1,0 +1,12 @@
+# Nmap 7.95 scan initiated Fri Oct  3 14:29:49 2025 as: /usr/lib/nmap/nmap -sS -p 22,80,443 -sV -oN rocky_ssh_http.txt 192.168.56.10
+Nmap scan report for site1.local (192.168.56.10)
+Host is up (0.00060s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  open   ssh     OpenSSH 9.9 (protocol 2.0)
+80/tcp  open   http    Apache httpd 2.4.63 ((Rocky Linux))
+443/tcp closed https
+MAC Address: 08:00:27:FC:4E:C1 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct  3 14:29:55 2025 -- 1 IP address (1 host up) scanned in 6.37 seconds

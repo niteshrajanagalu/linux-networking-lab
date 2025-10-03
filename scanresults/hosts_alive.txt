@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Fri Oct  3 14:28:15 2025 as: /usr/lib/nmap/nmap --privileged -sn -oN hosts_alive.txt 192.168.56.10 192.168.56.11 192.168.56.12
+Nmap scan report for site1.local (192.168.56.10)
+Host is up (0.0015s latency).
+MAC Address: 08:00:27:FC:4E:C1 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.56.11
+Host is up (0.0016s latency).
+MAC Address: 08:00:27:F2:CF:9A (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.56.12
+Host is up.
+# Nmap done at Fri Oct  3 14:28:16 2025 -- 3 IP addresses (3 hosts up) scanned in 0.11 seconds

@@ -1,0 +1,26 @@
+# Nmap 7.95 scan initiated Fri Oct  3 14:32:50 2025 as: /usr/lib/nmap/nmap -sS --top-ports 1000 -sV -oN rocky_top1000.txt 192.168.56.10
+Nmap scan report for site1.local (192.168.56.10)
+Host is up (0.0011s latency).
+Not shown: 986 filtered tcp ports (no-response), 10 filtered tcp ports (admin-prohibited)
+PORT     STATE  SERVICE     VERSION
+22/tcp   open   ssh         OpenSSH 9.9 (protocol 2.0)
+80/tcp   open   http        Apache httpd 2.4.63 ((Rocky Linux))
+443/tcp  closed https
+9090/tcp open   zeus-admin?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9090-TCP:V=7.95%I=7%D=10/3%Time=68DF9145%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,31,"HTTP/1\.1\x20400\x20Client\x20Error\r\n\r\nIncorrect\x20re
+SF:quest\.\r\n")%r(SqueezeCenter_CLI,31,"HTTP/1\.1\x20400\x20Client\x20Err
+SF:or\r\n\r\nIncorrect\x20request\.\r\n")%r(HTTPOptions,31,"HTTP/1\.1\x204
+SF:00\x20Client\x20Error\r\n\r\nIncorrect\x20request\.\r\n")%r(RTSPRequest
+SF:,31,"HTTP/1\.1\x20400\x20Client\x20Error\r\n\r\nIncorrect\x20request\.\
+SF:r\n")%r(Help,31,"HTTP/1\.1\x20400\x20Client\x20Error\r\n\r\nIncorrect\x
+SF:20request\.\r\n")%r(FourOhFourRequest,31,"HTTP/1\.1\x20400\x20Client\x2
+SF:0Error\r\n\r\nIncorrect\x20request\.\r\n")%r(LPDString,31,"HTTP/1\.1\x2
+SF:0400\x20Client\x20Error\r\n\r\nIncorrect\x20request\.\r\n")%r(SIPOption
+SF:s,31,"HTTP/1\.1\x20400\x20Client\x20Error\r\n\r\nIncorrect\x20request\.
+SF:\r\n");
+MAC Address: 08:00:27:FC:4E:C1 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct  3 14:35:07 2025 -- 1 IP address (1 host up) scanned in 137.34 seconds

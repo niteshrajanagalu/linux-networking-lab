@@ -1,0 +1,25 @@
+=== Apache Status ===
+● httpd.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; preset: disabled)
+    Drop-In: /etc/systemd/system/httpd.service.d
+             └─php-fpm.conf
+     Active: active (running) since Fri 2025-10-03 12:02:53 IST; 12min ago
+ Invocation: 3b46610de213498983e4c5058c2aa29c
+       Docs: man:httpd.service(8)
+   Main PID: 11691 (httpd)
+     Status: "Total requests: 24; Idle/Busy workers 100/0;Requests/sec: 0.0311; Bytes served/sec: 1.3KB/sec"
+      Tasks: 177 (limit: 28492)
+     Memory: 15.5M (peak: 16.1M)
+        CPU: 681ms
+     CGroup: /system.slice/httpd.service
+             ├─11691 /usr/sbin/httpd -DFOREGROUND
+             ├─11692 /usr/sbin/httpd -DFOREGROUND
+             ├─11693 /usr/sbin/httpd -DFOREGROUND
+             ├─11694 /usr/sbin/httpd -DFOREGROUND
+             └─11695 /usr/sbin/httpd -DFOREGROUND
+
+Oct 03 12:02:53 site1.local systemd[1]: Starting httpd.service - The Apache HTTP Server...
+Oct 03 12:02:53 site1.local (httpd)[11691]: httpd.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Oct 03 12:02:53 site1.local httpd[11691]: Server configured, listening on: port 80
+Oct 03 12:02:53 site1.local systemd[1]: Started httpd.service - The Apache HTTP Server.
+
