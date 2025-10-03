@@ -113,7 +113,7 @@ The scans revealed the following open ports and services on the Rocky Linux serv
 
 Finally, the Apache web service was verified by accessing `http://site1.local` from the host machine's browser. The server successfully responded with its test page. Further investigation of the `phpinfo()` files confirms that **PHP 8.3.19** is installed and active, indicating a dynamic web environment.
 
-*Image: Accessing the Apache test page for `site1.local`.*
+![Site1](screenshots/site1working.png)  
 
 ```
 ```
