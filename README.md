@@ -48,8 +48,8 @@ To facilitate easy access by name, hostnames were mapped in the `/etc/hosts` fil
 
 To validate the network configuration, a full set of connectivity tests was performed. Each VM successfully pinged every other VM in the lab, confirming that ICMP traffic and hostname resolution are working correctly across the entire private network.
 
- ![Pings from Kali](screenshots/kalipings.jpg) | ![Pings from Rocky](screenshots/rockypings.png) | ![Pings from Ubuntu](screenshots/ubuntupings.png) |
- :---: | :---: | :---: |
+| ![Pings from Kali](screenshots/kalipings.jpg) | ![Pings from Rocky](screenshots/rockypings.png) | ![Pings from Ubuntu](screenshots/ubuntupings.png) |
+| :---: | :---: | :---: |
 | _Connectivity tests from the Kali VM._ | _Connectivity tests from the Rocky VM._ | _Connectivity tests from the Ubuntu VM._ |
 
 Following these direct tests, an Nmap host discovery scan was also run from the Kali machine, which successfully identified all hosts on the network.
