@@ -120,6 +120,10 @@ Finally, the Apache web service was verified by accessing `http://site1.local` f
 
 ![Site1](screenshots/site1working.png) 
 
+
+![hosts](screenshots/winhosts.png) 
+
+
 *Image: Accessing the Apache test page for `site1.local`.*
 
 -----
